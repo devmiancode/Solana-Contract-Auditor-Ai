@@ -27,6 +27,7 @@ yarn-error.log*
 
 # local env files
 .env*.local
+.env
 
 # vercel
 .vercel
@@ -35,3 +36,15 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 tmp
+
+# Solana
+target/
+dist/
+test-ledger/
+
+# IDE
+.idea/
+.vscode/
+
+# Wallet files
+*wallet.json

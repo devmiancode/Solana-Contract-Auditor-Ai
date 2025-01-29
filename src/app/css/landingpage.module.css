@@ -1,0 +1,11 @@
+.mainContent {
+    padding-top: 80px; /* This should match the header height */
+  }
+  
+  @media (max-width: 1024px) {
+    .mainContent {
+      padding-top: 60px; /* Adjust this value for smaller screens */
+    }
+  }
+  
+  
