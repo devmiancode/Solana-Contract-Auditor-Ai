@@ -72,7 +72,7 @@ pnpm anchor-test
 #### Deploy to Devnet
 
 ```shell
-pnpm anchor deploy --provider.cluster devnet
+npm anchor deploy --provider.cluster devnet
 ```
 
 ### web
@@ -84,11 +84,11 @@ This is a React app that uses the Anchor generated client to interact with the S
 Start the web app
 
 ```shell
-pnpm dev
+npm dev
 ```
 
 Build the web app
 
 ```shell
-pnpm build
+npm build
 ```
