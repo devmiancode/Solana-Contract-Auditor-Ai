@@ -1,17 +1,23 @@
-# FinalPrototype
+# Solana Contract Auditor AI
 
-## Getting Started
+Un sistema inteligente para la gestión y auditoría de contratos en Solana, con capacidades de IA para análisis predictivo y sugerencias automatizadas.
 
-### Prerequisites
+## Requisitos Previos
 
-- Node v18.18.0 or higher
+- Node.js v20 o superior
+- npm o pnpm 9.0.0 o superior
+- Rust (última versión estable)
+- Solana CLI v1.18.9
+- Anchor CLI v0.30.1
 
-- Rust v1.77.2 or higher
-- Anchor CLI 0.30.1 or higher
-- Solana CLI 1.18.17 or higher
+## Instalación Rápida
 
-### Installation
+```bash
+# Clonar el repositorio
+git clone https://github.com/devmiancode/Solana-Contract-Auditor-Ai.git
+cd Solana-Contract-Auditor-Ai
 
+<<<<<<< HEAD
 #### Clone the repo
 
 ```shell
@@ -29,22 +35,52 @@ npm install
 
 ```
 npm run dev
+=======
+# Instalar dependencias (elige uno)
+npm install
+# o
+pnpm install
+
+# Iniciar la aplicación (elige uno)
+npm run dev
+# o
+pnpm dev
+>>>>>>> 1930320 (Details)
 ```
 
-## Apps
+## Características Principales
 
-### anchor
+- 🤖 Análisis predictivo con IA para contratos inteligentes
+- 💼 Gestión de cápsulas hereditarias en Solana
+- 🔒 Sistema de liberación automática de fondos
+- 📊 Monitoreo en tiempo real de contratos
+- 🎯 Sugerencias inteligentes para fechas de transferencia
 
-This is a Solana program written in Rust using the Anchor framework.
+## Estructura del Proyecto
 
-#### Commands
+### Programa Solana (./anchor)
+Contrato inteligente desarrollado con Anchor Framework que maneja:
+- Creación de cápsulas hereditarias
+- Sistema de liberación temporizada
+- Gestión de PDAs
 
-You can use any normal anchor commands. Either move to the `anchor` directory and run the `anchor` command or prefix the command with `pnpm`, eg: `pnpm anchor`.
+### Aplicación Web (./src)
+Frontend desarrollado con Next.js que incluye:
+- Panel de control interactivo
+- Integración con IA para análisis
+- Interfaz de gestión de cápsulas
+- Monitoreo en tiempo real
 
-#### Sync the program id:
+## Comandos del Proyecto
 
-Running this command will create a new keypair in the `anchor/target/deploy` directory and save the address to the Anchor config file and update the `declare_id!` macro in the `./src/lib.rs` file of the program.
+### Comandos Frontend
+```bash
+# Instalar dependencias
+npm install
+# o
+pnpm install
 
+<<<<<<< HEAD
 You will manually need to update the constant in `anchor/lib/basic-exports.ts` to match the new program id.
 
 ```shell
@@ -91,4 +127,58 @@ Build the web app
 
 ```shell
 npm build
+=======
+# Iniciar el servidor de desarrollo
+npm run dev
+# o
+pnpm dev
+
+# Construir el proyecto
+npm run build
+# o
+pnpm build
+
+# Iniciar en producción
+npm start
+# o
+pnpm start
+
+# Limpiar caché e instalar de nuevo
+npm clean-install
+>>>>>>> 1930320 (Details)
 ```
+
+### Comandos Solana/Anchor
+```bash
+# Configurar Solana a devnet
+solana config set --url devnet
+
+# Generar una nueva wallet
+solana-keygen new
+
+# Construir el programa
+cd anchor && anchor build
+
+# Desplegar en devnet (desde el directorio anchor)
+anchor deploy --provider.cluster devnet
+
+# Obtener balance de la wallet
+solana balance
+
+# Solicitar airdrop de SOL en devnet
+solana airdrop 2
+
+# Monitorear una cápsula hereditaria
+node src/components/conexion/timemonitor.js
+
+# Buscar cápsulas en la red
+node src/components/conexion/dappsearch.js
+```
+
+## Configuración de Desarrollo
+
+El proyecto está configurado para funcionar inmediatamente después de la clonación. La clave API de OpenAI está incluida para demostración en el hackathon.
+
+## Licencia
+
+MIT

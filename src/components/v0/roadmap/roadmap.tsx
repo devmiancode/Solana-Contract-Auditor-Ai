@@ -263,11 +263,6 @@ export default function RoadmapPage() {
           transition={{ duration: 0.5, delay: 0.5 }}
           className="text-center mt-24"
         >
-          <h2 className="text-4xl font-bold mb-4">Be part of the future of Brainwave</h2>
-          <p className="text-gray-400 max-w-2xl mx-auto mb-8">
-            Unleash the power of AI within Brainwave. Upgrade your productivity with Brainwave, the open AI chat app.
-          </p>
-          <Button className="bg-white hover:bg-white/90 text-black">GET STARTED</Button>
         </motion.section>
       </main>
     </div>

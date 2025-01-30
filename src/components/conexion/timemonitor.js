@@ -9,7 +9,7 @@ function createInstructionDiscriminator(name) {
     const buffer = Buffer.from(preimage, 'utf8');
     const hash = require('crypto').createHash('sha256');
     hash.update(buffer);
-    return Buffer.from(hash.digest()).slice(0, 8);
+    return Buffer.from(hash.digest()).subarray(0, 8);
 }
 
 // 📌 Conexión a la red de Solana
