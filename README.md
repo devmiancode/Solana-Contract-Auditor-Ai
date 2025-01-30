@@ -1,8 +1,8 @@
 # Solana Contract Auditor AI
 
-Un sistema inteligente para la gestión y auditoría de contratos en Solana, con capacidades de IA para análisis predictivo y sugerencias automatizadas.
+An intelligent system for contract management and auditing in Solana, with AI capabilities for predictive analytics and automated suggestions.
 
-## Requisitos Previos
+## Prerequisites
 
 - Node.js v20 o superior
 - npm o pnpm 9.0.0 o superior
@@ -10,10 +10,10 @@ Un sistema inteligente para la gestión y auditoría de contratos en Solana, con
 - Solana CLI v1.18.9
 - Anchor CLI v0.30.1
 
-## Instalación Rápida
+## Quick Installation
 
 ```bash
-# Clonar el repositorio
+# Clone repository
 git clone https://github.com/devmiancode/Solana-Contract-Auditor-Ai.git
 cd Solana-Contract-Auditor-Ai
 
@@ -48,61 +48,62 @@ pnpm dev
 >>>>>>> 1930320 (Details)
 ```
 
-## Características Principales
+## Key Features
 
-- 🤖 Análisis predictivo con IA para contratos inteligentes
-- 💼 Gestión de cápsulas hereditarias en Solana
-- 🔒 Sistema de liberación automática de fondos
-- 📊 Monitoreo en tiempo real de contratos
-- 🎯 Sugerencias inteligentes para fechas de transferencia
+- 🤖 Predictive analytics with AI for smart contracts.
+- 💼 Management of legacy capsules in Solana
+- 🔒 Automatic funds release system.
+- 📊 Real-time monitoring of contracts.
+- 🎯 Intelligent suggestions for transfer dates.
 
-## Estructura del Proyecto
+## Project Structure
 
-### Programa Solana (./anchor)
-Contrato inteligente desarrollado con Anchor Framework que maneja:
-- Creación de cápsulas hereditarias
-- Sistema de liberación temporizada
-- Gestión de PDAs
+### Solana (./anchor) Program.
+Smart contract developed with Anchor Framework that handles:
+- Inherited capsule creation.
+- Timed release system
+- PDA management
 
-### Aplicación Web (./src)
-Frontend desarrollado con Next.js que incluye:
-- Panel de control interactivo
-- Integración con IA para análisis
-- Interfaz de gestión de cápsulas
-- Monitoreo en tiempo real
+### Web Application (./src)
+Frontend developed with Next.js that includes:
+- Interactive control panel
+- AI integration for analytics
+- Capsule management interface
+- Real-time monitoring
 
-## Comandos del Proyecto
+  
+## Project Commands
 
-### Comandos Frontend
+### Frontend Commands
 ```bash
-# Instalar dependencias
+# Install dependencies
 npm install
-# o
+# or
 pnpm install
 
 <<<<<<< HEAD
 You will manually need to update the constant in `anchor/lib/basic-exports.ts` to match the new program id.
 
 ```shell
-pnpm anchor keys sync
+npm anchor keys sync
 ```
 
 #### Build the program:
 
 ```shell
-pnpm anchor-build
+npm anchor-build
 ```
 
 #### Start the test validator with the program deployed:
 
 ```shell
-pnpm anchor-localnet
+npm anchor-localnet
 ```
 
 #### Run the tests
 
 ```shell
-pnpm anchor-test
+npm anchor-test
 ```
 
 #### Deploy to Devnet
@@ -128,57 +129,57 @@ Build the web app
 ```shell
 npm build
 =======
-# Iniciar el servidor de desarrollo
+# Start the development server
 npm run dev
-# o
+# or
 pnpm dev
 
-# Construir el proyecto
+# Building the project
 npm run build
-# o
+# or
 pnpm build
 
-# Iniciar en producción
+# Start in production
 npm start
 # o
 pnpm start
 
-# Limpiar caché e instalar de nuevo
+# Clear cache and reinstall
 npm clean-install
 >>>>>>> 1930320 (Details)
 ```
 
-### Comandos Solana/Anchor
+### Solana/Anchor Commands
 ```bash
-# Configurar Solana a devnet
+# Configure Solana to devnet
 solana config set --url devnet
 
-# Generar una nueva wallet
+# Generate a new wallet
 solana-keygen new
 
-# Construir el programa
+# Building the program
 cd anchor && anchor build
 
-# Desplegar en devnet (desde el directorio anchor)
+# Deploy to devnet (from the anchor directory)
 anchor deploy --provider.cluster devnet
 
-# Obtener balance de la wallet
+# Obtain wallet balance
 solana balance
 
-# Solicitar airdrop de SOL en devnet
+# Request SOL airdrop on devnet
 solana airdrop 2
 
-# Monitorear una cápsula hereditaria
+# Monitoring a hereditary capsule
 node src/components/conexion/timemonitor.js
 
-# Buscar cápsulas en la red
+# Search capsules on the web
 node src/components/conexion/dappsearch.js
 ```
 
-## Configuración de Desarrollo
+## Development Configuration
 
-El proyecto está configurado para funcionar inmediatamente después de la clonación. La clave API de OpenAI está incluida para demostración en el hackathon.
+The project is configured to run immediately after cloning. The OpenAI API key is included for demonstration at the hackathon.
 
-## Licencia
+## License
 
 MIT
