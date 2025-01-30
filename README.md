@@ -49,7 +49,7 @@ pnpm dev
 ```
 
 ## IMPORTANT NOTE:
-When running the app reload the first time the web page in order to load correctly the 3D rendered models from SPLINE, the Wallet Widget and the Chatbot! We will be optimizing the webpage in order to make it load all at one fast. But for this Prototype we had to implement this fast loading in order to make things smoot.  
+When running the app reload the first time the web page in order to load correctly the 3D rendered models from SPLINE, the Wallet Widget and the Chatbot! We will be optimizing the webpage in order to make it load all at one fast. But for this Prototype we had to implement this fast loading in order to make things smooth.  
 
 
 ## Key Features
