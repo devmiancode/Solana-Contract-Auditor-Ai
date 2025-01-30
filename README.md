@@ -48,6 +48,9 @@ pnpm dev
 >>>>>>> 1930320 (Details)
 ```
 
+## IMPORTANT NOTE:
+When running the app reload the first time the web page in order to see the 3D rendered models from SPLINE. 
+
 ## Key Features
 
 - 🤖 Predictive analytics with AI for smart contracts.
