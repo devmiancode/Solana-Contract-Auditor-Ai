@@ -24,9 +24,23 @@ import styles from "@/app/css/landingpage.module.css"
 import Image from "next/image"
 import Spline from "@splinetool/react-spline"
 import "@/app/css/globals.css"
+import { useState, useEffect } from "react"
 
 export default function Home() {
   const router = useRouter()
+  const [splineLoaded, setSplineLoaded] = useState(false)
+  const [splineError, setSplineError] = useState(false)
+
+  const handleSplineLoad = () => {
+    setSplineLoaded(true)
+    setSplineError(false)
+  }
+
+  const handleSplineError = () => {
+    setSplineError(true)
+    setSplineLoaded(false)
+  }
+
   const useCases = [
     {
       tag: "Hereditary",
@@ -95,7 +109,21 @@ export default function Home() {
       <div className="min-h-screen w-full relative overflow-x-hidden">
         {/* Fixed background */}
         <div className="fixed inset-0 w-full h-full">
-          <Spline scene="https://prod.spline.design/ubBPMvvEdECQdejJ/scene.splinecode" />
+          <Spline 
+            scene="https://prod.spline.design/ubBPMvvEdECQdejJ/scene.splinecode"
+            onLoad={handleSplineLoad}
+            onError={handleSplineError}
+          />
+          {!splineLoaded && !splineError && (
+            <div className="absolute inset-0 flex items-center justify-center bg-black/50">
+              <div className="text-white">Cargando escena 3D...</div>
+            </div>
+          )}
+          {splineError && (
+            <div className="absolute inset-0 flex items-center justify-center bg-black/50">
+              <div className="text-white">Error al cargar la escena. Por favor, recarga la página.</div>
+            </div>
+          )}
         </div>
 
         {/* Scrollable content */}
