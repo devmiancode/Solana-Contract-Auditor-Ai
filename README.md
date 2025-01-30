@@ -22,13 +22,13 @@ cd <repo-name>
 #### Install Dependencies
 
 ```shell
-pnpm install
+npm install
 ```
 
 #### Start the web app
 
 ```
-pnpm dev
+npm run dev
 ```
 
 ## Apps
